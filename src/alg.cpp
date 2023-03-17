@@ -11,9 +11,8 @@ for (uint64_t i = 2; i < value - 1; i++) {
         return false;
     }
 }
-return true;
-}
-  
+return true;}
+
 uint64_t nPrime(uint64_t n) {
 std::vector<int> primes;
 primes.push_back(2);
@@ -24,16 +23,14 @@ while (primes.size() < n) {
     }
     num += 2;
 }
-return primes.back();
-}
+return primes.back();}
 
 uint64_t nextPrime(uint64_t value) {
 value+=1;
 while (!isPrime(value)) {
     value++;
 }
-return value;
-}
+return value;}
 
 uint64_t sumPrime(uint64_t hbound) {
 uint64_t sum = 0;
@@ -42,5 +39,4 @@ for (uint64_t i = 2; i < hbound; i++) {
         sum += i;
     }
 }
-return sum;
-}
+return sum;}
